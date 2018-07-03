@@ -75,6 +75,7 @@ wget -O $tmphtml 'http://releases.ubuntu.com/' >/dev/null 2>&1
 prec=$(fgrep Precise $tmphtml | head -1 | awk '{print $3}')
 trus=$(fgrep Trusty $tmphtml | head -1 | awk '{print $3}')
 xenn=$(fgrep Xenial $tmphtml | head -1 | awk '{print $3}')
+bionic=$(fgrep Bionic $tmphtml | head -1 | awk '{print $3}')
 
 
 
@@ -85,6 +86,7 @@ while true; do
     echo "  [1] Ubuntu $prec LTS Server amd64 - Precise Pangolin"
     echo "  [2] Ubuntu $trus LTS Server amd64 - Trusty Tahr"
     echo "  [3] Ubuntu $xenn LTS Server amd64 - Xenial Xerus"
+    echo "  [4] Ubuntu $bionic LTS Server amd64 - Xenial Xerus"
     echo
     read -p " please enter your preference: [1|2|3]: " ubver
     case $ubver in
@@ -99,6 +101,10 @@ while true; do
         [3]* )  download_file="ubuntu-$xenn-server-amd64.iso"
                 download_location="http://releases.ubuntu.com/$xenn/"
                 new_iso_name="ubuntu-$xenn-server-amd64-unattended.iso"
+                break;;
+        [4]* )  download_file="ubuntu-$bionic-server-amd64.iso"
+                download_location="http://releases.ubuntu.com/$bionic/"
+                new_iso_name="ubuntu-$bionic-server-amd64-unattended.iso"
                 break;;
         * ) echo " please answer [1], [2] or [3]";;
     esac
