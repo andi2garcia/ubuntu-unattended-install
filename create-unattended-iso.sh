@@ -88,7 +88,7 @@ while true; do
     echo "  [3] Ubuntu $xenn LTS Server amd64 - Xenial Xerus"
     echo "  [4] Ubuntu $bionic LTS Server amd64 - Xenial Xerus"
     echo
-    read -p " please enter your preference: [1|2|3]: " ubver
+    read -p " please enter your preference: [1|2|3|4]: " ubver
     case $ubver in
         [1]* )  download_file="ubuntu-$prec-server-amd64.iso"           # filename of the iso to be downloaded
                 download_location="http://releases.ubuntu.com/$prec/"     # location of the file to be downloaded
@@ -106,7 +106,7 @@ while true; do
                 download_location="http://releases.ubuntu.com/$bionic/"
                 new_iso_name="ubuntu-$bionic-server-amd64-unattended.iso"
                 break;;
-        * ) echo " please answer [1], [2] or [3]";;
+        * ) echo " please answer [1], [2], [3] or [4]";;
     esac
 done
 
