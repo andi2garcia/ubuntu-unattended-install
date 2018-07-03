@@ -102,7 +102,7 @@ while true; do
                 download_location="http://releases.ubuntu.com/$xenn/"
                 new_iso_name="ubuntu-$xenn-server-amd64-unattended.iso"
                 break;;
-        [4]* )  download_file="ubuntu-$bionic-server-amd64.iso"
+        [4]* )  download_file="http://releases.ubuntu.com/$bionic/ubuntu-$bionic-live-server-amd64.iso"
                 download_location="http://releases.ubuntu.com/$bionic/"
                 new_iso_name="ubuntu-$bionic-server-amd64-unattended.iso"
                 break;;
