@@ -7,6 +7,7 @@ This script creates a 100% original Ubuntu installation; no additional software 
 Consider using tools like chef or puppet to perform any additional software installations/configurations. 
 
 Created by: **Rinck Sonnenberg (Netson)**
+Copied by: Andrei García - Just for used the 18.04 version. All credits given to Rinck.
 
 ## Compatibility
 
@@ -25,7 +26,7 @@ This script has been tested on and with these three versions as well, but I see 
 * From your command line, run the following commands:
 
 ```
-$ wget https://raw.githubusercontent.com/netson/ubuntu-unattended/master/create-unattended-iso.sh
+$ wget https://raw.githubusercontent.com/andi2garcia/ubuntu-unattended-install/master/create-unattended-iso.sh
 $ chmod +x create-unattended-iso.sh
 $ sudo ./create-unattended-iso.sh
 ```
